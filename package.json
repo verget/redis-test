@@ -4,9 +4,11 @@
   "description": "Redis test project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "redis-server",
-    "start": "node index.js"
+    "clear": "node index.js clear",
+    "errors": "node index.js getErrors",
+    "start": "node index.js",
+    "test": "node index.js test"
   },
   "repository": {
     "type": "git",
@@ -22,9 +24,6 @@
   },
   "homepage": "https://github.com/verget/redis-test#readme",
   "dependencies": {
-    "bluebird": "^3.5.0",
-    "hiredis": "^0.5.0",
-    "redis": "^2.8.0",
     "rsmq": "^0.8.2"
   }
 }
